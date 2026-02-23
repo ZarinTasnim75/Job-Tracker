@@ -35,26 +35,26 @@
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <h2 class="card-title font-light">Total</h2>
-                    <p class="font-bold text-3xl">8</p>
+                    <p id="total-count" class="font-bold text-3xl">8</p>
                 </div>
             </div>
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <h2 class="card-title font-light">Interview</h2>
-                    <p class="font-bold text-3xl text-green-500">0</p>
+                    <p  id="interview-count" class="font-bold text-3xl text-green-500">0</p>
                 </div>
             </div>
             <div class="card bg-base-100 shadow-sm">
                 <div class="card-body">
                     <h2 class="card-title font-light">Rejected</h2>
-                    <p class="font-bold text-3xl text-red-500">0</p>
+                    <p id="rejected-count" class="font-bold text-3xl text-red-500">0</p>
                 </div>
             </div>
         </div>
 
-       <div class="border mt-6 border-gray-200"></div>
-       
-         <section class="mt-10">
+        <div class="border mt-6 border-gray-200"></div>
+
+        <section class="mt-10">
             <div class="flex justify-between">
                 <p class="font-semibold">Available Jobs</p>
                 <p class="font-light text-gray-600"><span id="job-count">8</span> jobs</p>
@@ -67,8 +67,8 @@
             </div>
         </section>
 
-          <section id="list">
-             <div class="mx-auto my-8 p-6 bg-white rounded job-card" >
+        <section id="list">
+            <div class="mx-auto my-8 p-6 bg-white rounded job-card" data-status="all">
                 <div>
                     <h3 class="font-bold text-lg">Mobile First Corp</h3>
                     <p class="text-gray-500">React Native Developer</p>
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px] badge">
+                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px]">
                         NOT APPLIED
                     </p>
                 </div>
@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-             <div class="mx-auto my-8 p-6 bg-white rounded job-card" >
+             <div class="mx-auto my-8 p-6 bg-white rounded job-card" data-status="all">
                 <div>
                     <h3 class="font-bold text-lg">WebFlow Agency</h3>
                     <p class="text-gray-500">Web Designer & Developer</p>
@@ -111,7 +111,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px] badge">
+                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px]">
                         NOT APPLIED
                     </p>
                 </div>
@@ -125,7 +125,7 @@
                 </div>
             </div>
 
-             <div class="mx-auto my-8 p-6 bg-white rounded job-card" >
+             <div class="mx-auto my-8 p-6 bg-white rounded job-card" data-status="all">
                 <div>
                     <h3 class="font-bold text-lg">DataViz Solutions</h3>
                     <p class="text-gray-500">Data Visualization Specialist</p>
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px] badge">
+                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px]">
                         NOT APPLIED
                     </p>
                 </div>
@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-             <div class="mx-auto my-8 p-6 bg-white rounded job-card" >
+             <div class="mx-auto my-8 p-6 bg-white rounded job-card" data-status="all">
                 <div>
                     <h3 class="font-bold text-lg">CloudFirst Inc</h3>
                     <p class="text-gray-500">Backend Developer</p>
@@ -165,7 +165,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px] badge">
+                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px]">
                         NOT APPLIED
                     </p>
                 </div>
@@ -179,7 +179,7 @@
                 </div>
             </div>
 
-              <div class="mx-auto my-8 p-6 bg-white rounded job-card" >
+              <div class="mx-auto my-8 p-6 bg-white rounded job-card" data-status="all">
                 <div>
                     <h3 class="font-bold text-lg">Innovation Labs</h3>
                     <p class="text-gray-500">UI/UX Engineer</p>
@@ -193,7 +193,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px] badge">
+                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px]">
                         NOT APPLIED
                     </p>
                 </div>
@@ -207,7 +207,7 @@
                 </div>
             </div>
 
-              <div class="mx-auto my-8 p-6 bg-white rounded job-card" >
+              <div class="mx-auto my-8 p-6 bg-white rounded job-card" data-status="all">
                 <div>
                     <h3 class="font-bold text-lg">MegaCorp Solutions</h3>
                     <p class="text-gray-500">JavaScript Developer</p>
@@ -221,7 +221,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px] badge">
+                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px]">
                         NOT APPLIED
                     </p>
                 </div>
@@ -235,7 +235,7 @@
                 </div>
             </div>
 
-              <div class="mx-auto my-8 p-6 bg-white rounded job-card">
+              <div class="mx-auto my-8 p-6 bg-white rounded job-card" data-status="all">
                 <div>
                     <h3 class="font-bold text-lg">StartupXYZ</h3>
                     <p class="text-gray-500">Full Stack Engineer</p>
@@ -249,7 +249,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px] badge">
+                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px]">
                         NOT APPLIED
                     </p>
                 </div>
@@ -263,7 +263,7 @@
                 </div>
             </div>
 
-              <div class="mx-auto my-8 p-6 bg-white rounded job-card" >
+              <div class="mx-auto my-8 p-6 bg-white rounded job-card" data-status="all">
                 <div>
                     <h3 class="font-bold text-lg">TechCorp Industries</h3>
                     <p class="text-gray-500">Senior Frontend Developer</p>
@@ -277,7 +277,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px] badge">
+                    <p class="bg-blue-50 text-blue-800 text-xs font-semibold px-2 py-2 rounded max-w-[100px]">
                         NOT APPLIED
                     </p>
                 </div>
@@ -293,7 +293,7 @@
         </section>
 
         <section>
-             <div class="flex flex-col items-center justify-center mx-auto my-5 p-5  bg-white rounded no-job" style="display: none;">
+             <div class="flex flex-col items-center justify-center mx-auto my-5 p-5  bg-white rounded no-jobs" style="display: none;">
                 <img src="assests/jobs.png" alt="" class="mt-15 mb-5 w-20 mx-auto">
 
                 <p class="font-semibold text-xl">No jobs available </p>
